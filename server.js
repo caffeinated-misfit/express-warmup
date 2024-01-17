@@ -18,10 +18,10 @@ const places = [
         address: "123 Main St",
     },
 ];
-app.get("/html", function (req, res) {
+app.get("/places", function (req, res) {
     res.json(places);
 });
 
-app.listen(function () {
+app.listen(PORT, function () {
     console.log("Server is probably listening at http://localhost:8080");
 });
